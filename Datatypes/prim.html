@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let value="null";
+    console.log(typeof value);
+
+    let value1="undefined";
+    console.log(typeof value1);
+
+    let value2=null;
+    console.log(typeof value2);
+
+    let value3=undefined;
+    console.log(typeof value3);
+
+    console.log("1"+2+3);
+    console.log(1+2+"3");
+
+   let str="Tushar";
+   console.log(typeof str);
+   console.log(Number(str));
+
+   console.log(null>=0);
+   console.log(null==0);
+
+   console.log(undefined>=0);
+
+   console.log(2==="2");
+   console.log(2=="2");
+
+  //  even though the descriptions are the same, symbols are always unique.
+
+   const id=Symbol('123');
+   const anotherid=Symbol('123');
+   console.log(id==anotherid);
+   console.log(id===anotherid);
+
+  </script>
+</body>
+</html>

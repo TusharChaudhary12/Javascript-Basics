@@ -1,0 +1,10 @@
+let , var and const
+
+var can be redeclared and reinitialized.
+
+let can be reinitialized and cannot be redeclared.
+
+const cannot be redeclared or reinitialized.
+It is must to initialize the value of const at the time of redeclaration.
+
+Prefer not to use var because of issue in block scope and functional scope.

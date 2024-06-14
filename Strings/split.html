@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let str="Javascript is a programming language";
+    str=str.split(' ');
+    console.log(str);
+
+    // output : ['Javascript', 'is', 'a' ,' programming','language']
+
+    let str2="Javascript, is ,a, programming language";
+    str2=str2.split(',');
+    console.log(str2);
+
+    // output : ['Javascript', 'is', 'a' ,' programming language']
+
+    let str3="Javascript & is a & programming& language";
+    str3=str3.split('&');
+    console.log(str3);
+
+    // output : ['Javascript ', ' is a ', ' programming', ' language']
+
+    // ---------------*******************--------
+    
+    // Splitting by Empty String
+    
+    let words="HelloWords";
+    console.log(words.split(''));
+
+    // output: ['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'd', 's']
+    
+  </script>
+</body>
+</html>
