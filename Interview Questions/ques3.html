@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Object.assign() static method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.</title>
+</head>
+<body>
+  <script>
+   
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+console.log(returnedTarget);
+console.log(source);
+console.log(target);
+console.log(returnedTarget === target);
+
+// ------------Concatenation of objects using spread operator--------------------------
+
+const myobj1 = { a: 1, b: 2 };
+const myobj2 = { b: 4, c: 5 };
+
+console.log({...myobj1,...myobj2});
+
+
+// --------------------------------************************---------------------
+
+
+   let obj1={1:"a",2:"b"};
+   let obj2={3:"c",4:"d"};
+   
+    console.log(obj1[1]);
+    console.log(obj1['2']);
+    console.log(typeof obj1[1]);  // string
+    // console.log(obj2.3);   it will not work because key is not a valid identifier here
+    
+  </script>
+</body>
+</html>

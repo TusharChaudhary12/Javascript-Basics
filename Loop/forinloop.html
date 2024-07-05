@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forin loop is used to iterate the properties of an object</title>
+</head>
+
+<body>
+  <script>
+    let student = {
+      firstname: "Tushar",
+      lastName: "Chaudhary",
+      age: 24,
+      city: "Bijnor"
+    }
+
+    for (let val in student) {
+      console.log(val);
+      console.log(student[val]);
+      console.log(val, student[val]);
+    }
+  </script>
+
+  <!-- <script>
+    let student={
+      firstname:"Tushar",
+      lastName:"Chaudhary",
+      age:24,
+      city:"Bijnor"
+    }
+
+    console.log(Object.keys(student));
+console.log(Object.values(student));
+console.log(Object.entries(student));
+    
+  </script> -->
+
+  <!-- <script>
+    let arr=[100,200,300,400,500];
+    for(const key in arr){
+      console.log(arr[key]);
+    }
+  </script> -->
+
+</body>
+
+</html>

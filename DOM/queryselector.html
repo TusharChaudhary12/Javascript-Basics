@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if class will not exist so it will return HTML collection of zero length</title>
+</head>
+<body>
+  <h1 id="title" class="hello">Full Stack Web Development <span style="display: none;">Javascript is hidden</span> </h1>
+  <h2 class="hello">Hello CSS</h2>
+  <p class="hello">Hello Javascript</p>
+  <p>Tushar Chaudhary</p>
+  <script>
+   let p=document.querySelector("p");
+   console.log(p);
+   console.dir(p);
+
+   let title=document.querySelector("#title");
+   console.log(title);
+   console.dir(title);
+
+   let hello=document.querySelector(".hello");
+   console.log(hello);
+   console.dir(hello);
+
+  </script>
+</body>
+</html>

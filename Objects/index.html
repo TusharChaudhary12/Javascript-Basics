@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const sym=Symbol("Noida");
+    let student={
+      firstName:"Tushar",
+      lastName:"Chaudhary",
+      city:"Bijnor",
+      age:25,
+      [sym]:"Noida",
+      Pass:90,
+      email:"tushach12@gmail.com",
+    }
+    student.email="tushach12@google.com";
+
+    
+    console.log(student['firstName']);
+    console.log(student["lastName"]);
+    console.log(student[`city`]);
+    console.log(student.age);
+    console.log(student);
+    // console.log(student[Pass]); //  it will give us error beacuse Pass is string and we are trying to access the variable
+    console.log(student[sym]);
+  </script>
+</body>
+</html>

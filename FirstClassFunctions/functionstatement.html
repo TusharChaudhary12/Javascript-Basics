@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Normal function that we create using naming convention and by this we can do the hoisting.
+    function statement also known as function declaration
+  </title>
+</head>
+
+<body>
+  <script>
+
+    function xyz() {
+      console.log("function statement");
+    }
+    xyz();
+
+  </script>
+
+
+  <script>
+    xyz();   ///hoisting
+    function xyz() {
+      console.log("function statement");
+    }
+
+  </script>
+
+</body>
+
+</html>

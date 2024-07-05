@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Previously we were passing a callback function inside other function and we were blindly trusting that function.what happend if it might have called our function twice or it might never called.
+    // but here we are attaching a callback function to Promise object,here we have control of our code
+
+    // const cart=["pants","Shirts","shoes"];
+    // const promise=createOrder(cart);
+    // promise.then(function(){
+    //   proceedTopayment(orderId);
+    // })
+
+
+    // here createOrder API is only doing its job ,it will create an order and it will fill the promise object with data.As soon as we have data inside Promise object it automatically call our callback function back for sure and one time.
+
+
+    // ----------------------------************************----------------------------
+
+  </script>
+</body>
+</html>

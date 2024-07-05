@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document.getElementsByClassName returns a HTMLCollection
+    if class will not exist so it will return HTML collection of zero length</title>
+</head>
+<body>
+  <h1 id="title" class="heading">Full Stack Web Development <span style="display: none;">Javascript is hidden</span> </h1>
+  <h2 class="heading">Hello CSS</h2>
+  <p class="heading">Hello Javascript</p>
+  <script>
+    let heading=document.getElementsByClassName('heading');
+    for(let i=0;i<=heading.length;i++){
+        // document.getElementsByClassName returns a HTMLCollection, 
+  // so we need to iterate through it to apply styles to each element.
+     heading[i].style.fontSize="50px";
+     heading[i].style.backgroundColor="green";
+    }
+    console.log(hello);
+    console.dir(hello);
+  </script>
+</body>
+</html>

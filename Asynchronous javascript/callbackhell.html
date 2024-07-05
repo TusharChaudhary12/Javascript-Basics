@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    javascript is a synchronous singlethreaded language.
+    callback function do the async code in javascript.
+    problems with callback:
+
+    1) Callback hell:
+    when a function is passed as a argument to another function , this is called callback function.This process continues and there are many callback inside another callback function.This grows the code horizontally instead of vertically.Our cod become unreadable and unmaintable.This mechanism is called pyramid of doom.
+    callback function enables us to do async programming in JS.
+    when any async operation is encountered so callback associated with that operation is sent to the Web API.
+
+    2)Inversion of control
+
+    The callback function is passing to another function as an argument.so our callback function blindly trust the other function whether this code will execeute or not , what if it called twice because we don't know the bugs inside other function.
+
+
+  </title>
+</head>
+<body>
+  <script>
+    // Pyramid of doom
+    const cart=["Jeans","Kurta","Shoes"];
+    api.createOrder(cart,function(){
+      api.proceedToPayment(function(){
+        api.showordersummary(function(){
+
+        })
+      })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concat</title>
+</head>
+<body>
+  <script>
+let a1=[10,20,30,40];
+let a2=[11,21,31,41];
+let a3=[12,22,32,41];
+console.log(a1.concat(a2,a3));
+
+// ---------------------------*****************-------------------------------
+
+// Spread operator is used to concat the array
+
+let b1=[10,20,30,40];
+let b2=[50,60,70,80];
+let b3=[90,100,101,101];
+console.log([...b1,...b2,...b3]);
+
+// ------**********************---------------
+
+// In situations where you want to avoid mutating the original array, methods like concat(), slice(), and map() can be useful as they return new arrays without modifying the original one. .
+
+const ab=[10,20,30];
+const cd=[101,102];
+ab.concat(cd);
+console.log(ab);
+
+
+  </script>
+</body>
+</html>

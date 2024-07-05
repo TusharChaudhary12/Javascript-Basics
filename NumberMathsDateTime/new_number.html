@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      console.log(2==Number(2));    //true
+      console.log(2===Number(2));    //true
+     
+       console.log(Number(2)==new Number(2));
+      
+       // loose equality operator compares value only so value is same hence it will log the true result over the console  
+
+      //  --------------------------------**********************------------------------
+
+       console.log(Number(2)===new Number(2));
+      // strict equality operator compares value and type so value is same but Number(2) is primitive data type and new Number(2) is object Number hence it will log the false result over the console  
+  </script>
+</body>
+</html>

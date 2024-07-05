@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher-order functions are functions that either take other functions as arguments or return functions as
+    results.
+  callback is a function which is passed as an argument to another function</title>
+</head>
+
+<body>
+
+
+<!-- <script>
+  function a(b){
+    b();
+  }
+  let msg=function (){
+    console.log("Hello");
+  }
+ a(msg);
+</script> -->
+
+
+<!-- <script>
+  function a(b){
+    b();
+  }
+  a(function(){
+    console.log("Hello");
+  })
+</script> -->
+
+<!-- <script>
+  function a(b){
+    b();
+  }
+  a(()=>console.log("Hello"));
+
+ </script> -->
+
+ <!-- <script>
+  function x(a,b){
+    a();b();
+  }
+  x(()=>console.log("hello"),()=>console.log("World"));
+ </script> -->
+
+
+ <!-- -------------------------------return function as a result---------------------- -->
+ <!-- when we wrap any function inside the outer function and we return the inner function and we used variables of outer function inside inner function so when we return the inner function so not only function will return  but function with its lexical scope will return .This is closure means a function with its lexical scope bundled together form a closure.here inner function is closure with its lexical scope outer -->
+
+
+ <script>
+  function outer(){
+    let a=10;
+    let b=20;
+    function inner(){
+    console.log(a,b);
+    }
+    return inner;
+  }
+  let out=outer();
+  out();
+ </script>
+
+</body>
+
+</html>

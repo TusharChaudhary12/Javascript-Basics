@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forof loop is used to iterate over the values of an iterable object(arrays and string)</title>
+</head>
+<body>
+  <script>
+    let str="Tushar";
+    for(let val of str){
+      console.log(val);
+    }
+
+    let arr=[10,20,30,40];
+    for(let values of arr){
+      console.log(values);
+    }
+
+    let map=new Map();
+    map.set('Cpp','C++');
+    map.set('py','Python');
+    map.set('WD','Web Dev');
+    for(const [key,value] of map){
+      console.log(key,':',value);
+    }
+  </script>
+</body>
+</html>

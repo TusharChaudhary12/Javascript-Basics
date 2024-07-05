@@ -1,0 +1,1 @@
+In browsers, window and this refer to the same global object in the global scope.

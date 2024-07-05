@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <!-- <script>
+    function x(){
+      var i=1;
+      setTimeout(function (){
+        console.log(i);
+      },1000);
+    }
+    x(); -->
+
+  <!-- <script>
+  function x(){
+    for(var i=1;i<=5;i++){
+     setTimeout(function (){
+      console.log(i),i*1000
+     })
+    }
+  }
+  x();
+</script> -->
+
+  <!-- var variable is globally scoped so each time when setTimeout method is called function form a closure but copy of i refer to same memory location(no new variable is created) -->
+
+
+  <!-- --------------------*********************------------------------ -->
+
+  <!-- <script>
+  function x(){
+    for(let i=1;i<=5;i++){
+     setTimeout(function (){
+      console.log(i),i*1000
+     })
+    }
+  }
+  x();
+</script> -->
+
+  <!-- let variable is blocked scoped so when setTimeout is called ,function form a closure with new value itself and new copy of i is created everytime. -->
+
+  <!-- setTimeout stores the functions to a different place and attach the timer to it,when timer is finsihed it rejoins the call stack and executed. -->
+<!-- 
+  <script>
+    function x() {
+      for (var i = 1; i <= 5; i++) {
+        function close(val) {
+          setTimeout(() => {
+            console.log(val)
+          }, val * 1000);
+        }
+        close(i);
+      }
+    }
+    x();
+  </script> -->
+
+  <!-- without closure var reference gives the latest value.
+  If we use let/const everytime a new copy of variable is created and this can be done without closure.Because let and const have block scope. -->
+
+  <script>
+    console.log("one");
+    let id=setTimeout('console.log("hello")');
+    console.log("two");
+    // clearTimeout(id);
+   
+  </script>
+
+
+
+</body>
+
+</html>

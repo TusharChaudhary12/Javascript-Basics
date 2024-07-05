@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if ID will not exist so it will return null</title>
+</head>
+<body>
+  <h1 id="title" class="hello">Full Stack Web Development <span style="display: none;">Javascript is hidden</span> </h1>
+  <script>
+    let title=document.getElementById("title");
+    console.log(title);
+    title.style.backgroundColor="red";
+    console.log(title.innerHTML);
+    console.log(title.innerText);
+    console.log(title.textContent);
+  </script>
+</body>
+</html>

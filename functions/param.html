@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+    function add(num1){
+    return num1;
+    }
+    console.log(add(10,20,30));
+  </script> -->
+
+<!-- ------------------------------------------------------- -->
+
+<!-- <script>
+  function add(...num1){
+  return num1;
+  }
+  console.log(add(10,20,30));
+</script> -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- <script>
+  function add(n1,n2,...num1){
+  return num1;
+  }
+  console.log(add(10,20,30,40,50));  // it will return array except n1=10 and n2=20
+</script> -->
+
+<!-- ------------------------------------------------------------------- -->
+
+<script>
+  function add(...arr){
+    for(let i=0;i<arr.length;i++){
+      return(arr[i]);
+    }
+  }
+  console.log(add([101,true,30,null,50]));  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  
+const obj={
+  key1:"Tushar",
+  key2:12,
+  key3:true,
+  key4:null,
+  key5:undefined,
+  key6:[10,20,30],
+  key7:{firstname:"Tushar"},
+  key8:function(){console.log("Tushar Vedita");}
+}
+
+console.log(obj.key1);
+console.log(this.key1);    // 'this' is a Window(global object) and key1 is  not a property of global object
+
+// ----------------------------************************--------------------
+
+const student=new Object();   //singleton object
+    const obj1={};       // non singleton object
+    student.firstname="Tushar",
+    student.lastname="Chaudhary",
+    student.Pass=true,
+    student.grade="A",
+    console.log(student);
+
+</script>
+</body>
+</html>

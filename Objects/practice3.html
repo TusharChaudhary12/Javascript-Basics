@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <script>
+    const sym = Symbol('Noida');
+    let student = {
+      firstname: "Tushar",
+      lastname: "Chaudhary",
+      Department: "IT",
+      Area: "Bijnor",
+      [sym]: 'Noida',
+      City: function () {
+        console.log(this.Area);
+      },
+      Name() {
+        console.log(`My name is ${this.firstname} ${this.lastname}`);
+      },
+      username: {
+        userfullname: {
+          userfirstname: "Akash",
+          userlastname: "Chaudhary"
+        }
+      }
+    }
+    student.Emailid = "tushach12@gmail.com";
+    student.Department="Electronics";
+    console.log(student);
+    
+    const{username}=student;
+    // console.log(student.username.userfullname.userfirstname);
+    console.log(username.userfullname.userfirstname);
+    student.City(); student.Name();
+    delete student.City;
+    // console.log(student);
+    // student.City();
+    student.Name();
+
+    Object.freeze(student);
+    student.Emailid="ilus6.5a@gmail.com";
+    console.log(student);
+
+    console.log(Object.values(student));
+    console.log(Object.entries(student));
+    console.log(Object.keys(student));
+    console.log(student.hasOwnProperty('Tushar'));
+    console.log(student.hasOwnProperty('firstname'));
+    
+
+  </script> -->
+<!-- <script>
+  let student={
+    firstname:"Tushar",
+    lastname:"Chaudhary"
+  }
+  let Area={
+    city:"Bijnor",
+    hometown:"Noida"
+  }
+  console.log({...student,...Area});
+</script> -->
+
+<script>
+   let student={
+    firstname:"Tushar",
+    lastname:"Chaudhary"
+  }
+  let Area={
+    city:"Bijnor",
+    hometown:"Noida"
+  }
+  let retunedTarget=Object.assign(student,Area);
+  console.log(retunedTarget);
+  console.log(student);
+  console.log(Area);
+
+</script>
+
+</body>
+
+</html>

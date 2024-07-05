@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The spread operator (...) is used for for create shallow copy of an array and concatenate the array </title>
+</head>
+
+<body>
+  <script>
+    // Spread operator is used to concate the array
+
+    let b1 = [10, 20, 30, 40];
+    let b2 = [50, 60, 70, 80];
+    let b3 = [90, 100, 101, 101];
+    console.log([...b1, ...b2, ...b3]);
+
+    // ----------------------------***************-----------------
+
+    const arr1 = [101, 102, 103];
+    console.log([...arr1, 201, 202]);
+
+    // ----------Spread operator is used to Create the shallow copy-------------------
+
+    const myArray=["Tuhsar",101,true,null];
+    console.log([...myarray]);
+
+  </script>
+</body>
+
+</html>

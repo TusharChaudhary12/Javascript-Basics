@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>when we assign a function to a variable and function is having a name that is named function expression and we cannnot do hositing</title>
+</head>
+<body>
+  <script>
+    let a = function xyz() {
+      console.log("function Assignment");
+    }
+    a();
+    </script>
+
+<script>
+  let b = function xyz() {
+    console.log("function Assignment");
+  }
+  xyz();      // it will Reference error i.e xyz is not defined
+  </script>
+</body>
+</html>

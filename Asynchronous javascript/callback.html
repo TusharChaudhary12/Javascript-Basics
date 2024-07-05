@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function is passed as an argument to another function is called callback function </title>
+</head>
+<body>
+  <!-- <script>
+    function msg(){
+      console.log("Hello");
+    }
+    setTimeout(msg,2000);
+  </script> -->
+
+  <!-- <script>
+    setTimeout(function msg(){
+      console.log("Hello");
+    },2000);
+  </script> -->
+
+  <!-- <script>
+    setTimeout(function (){
+      console.log("Hello");
+    },2000);
+  </script> -->
+
+  <!-- <script>
+    setTimeout(()=>console.log("Hello"),2000);
+  </script> -->
+
+  <!-- <script>
+  function calc(a,b,sum){
+sum(a,b);
+  }
+  calc(1,2, function sum(a,b){
+      console.log(a+b);
+    });
+  </script> -->
+
+  <script>
+    function a(){
+      console.log("hello");
+    }
+    console.log(a);
+    console.dir(a);
+  </script>
+
+</body>
+</html>

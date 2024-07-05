@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr1 = [10, 20, 30, 40];
+    let arr2 = [101, 102, 103, 104];
+    console.log([...arr1, ...arr2]);
+    console.log([...arr1]);
+
+    let student1 = {
+      name: "Tushar chaudhary",
+      roolno: "1803231173"
+    }
+    let student2 = {
+      name2: "Akash Chaudhary",
+      roolno2: "1803231174"
+    }
+    console.log({ ...student1, ...student2 });
+    let obj1={...student1};
+    student1.email="tushach12@gmail.com";
+    student1.city="Bijnor";
+    console.log(student1);
+    console.log(obj1);
+  
+
+  </script>
+</body>
+
+</html>

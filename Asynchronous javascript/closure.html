@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure in javascript allows functions to retain access to variables from lexical scope even after outer
+    function has finished its execution</title>
+</head>
+
+<body>
+  <!-- <script>
+    function outer(){
+      var i=1;
+      function inner(){
+        console.log(i);
+      }
+      inner();
+    }
+    outer();
+  </script> -->
+
+  <!-- <script>
+    function outer(){
+      var i=1;
+      function inner(){
+        console.log(i);
+      }
+      return inner;
+    }
+  //  var close=outer();
+  //  close();
+  outer()();
+  </script> -->
+
+
+  <!-- <script>
+    function outer(){
+      function inner(){
+        console.log(i);
+      }
+      var i=1;
+      return inner;
+    }
+  //  var close=outer();
+  //  close();
+  outer()();
+  </script> -->
+
+  <!-- <script>
+    function outer(){
+      function inner(){
+        console.log(i);
+      }
+      let i=1;
+      return inner;
+    }
+   var close=outer();
+   close();
+  </script> -->
+
+  <script>
+    function outer(j){
+      function inner(){
+        console.log(i,j);
+      }
+      let i=1;
+      return inner;
+    }
+   var close=outer("Hello Javascript");
+   close();
+
+  <!-- <script>
+    function outest() {
+      var k=30;
+      function outer(j) {
+        function inner() {
+          console.log(i, j,k);
+        }
+        let i = 1;
+        return inner;
+      }
+      return outer;
+    }
+    var close = (outest())("Hello Javascript");
+    close(); -->
+
+    // it will behave as the same way , inner function form a closure with its outer environment and b is a part of outer environemnt of inner function so inner form closure with b also
+  </script>
+
+
+</body>
+
+</html>

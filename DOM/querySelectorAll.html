@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document.querySelectorAll return node list , if not exist then nodelist of zero length</title>
+</head>
+<body>
+  <h1 id="title" class="hello">Full Stack Web Development <span style="display: none;">Javascript is hidden</span> </h1>
+  <h2 class="hello">Hello CSS</h2>
+  <p class="hello">Hello Javascript</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p>Tushar Chaudhary</p>
+  <script>
+   let p=document.querySelectorAll("p");
+   for(let i=0;i<p.length;i++){
+    p[i].style.backgroundColor="yellow";
+    p[i].style.fontWeight="bold";
+   }
+   console.log(p);
+   console.dir(p);
+
+   let hello=document.querySelectorAll(".hello");
+   for(let i=0;i<hello.length;i++){
+    hello[i].style.fontStyle="italic";
+    hello[i].style.backgroundColor="red";
+   }
+   console.log(hello);
+   console.dir(hello);
+
+  </script>
+</body>
+</html>

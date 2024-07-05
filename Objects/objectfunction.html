@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     let student={
+      firstname:"Vedita",
+      lastName:"Ji",
+      Job:"IT",
+      city(){
+        console.log("Bijnor");
+      },
+      company(){
+        return this.Job;
+      },
+      fullname:function(){
+        return this.firstname+" "+this.lastName;
+      }
+    }
+    student.func=function(){console.log("Tushar chaudhary");}
+    console.log(student.func);  // method is called
+    console.log(student.func());   // function is called
+    console.log(student.city);  //method is called
+    console.log(student.city());  // function is called
+    console.log(student.company());
+    console.log(student.fullname());
+  </script>
+</body>
+</html>

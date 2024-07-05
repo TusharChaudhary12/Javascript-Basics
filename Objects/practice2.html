@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const sym=Symbol("Noida");
+    let student = {
+      firstname: "Tushar",
+      lastname: "Chaudhary",
+      isPass: true,
+      Area: "Bijnor",
+      Email: "tushach12@gmail.com",
+      [sym]:"Noida",
+      Education() {
+        console.log(this.firstname);
+      },
+      City:function() {
+        console.log(this.Area);
+      }
+    }
+    student.Email = "ilus6.5a@gmail.com";
+    delete student['isPass'];
+    delete student.lastname;
+    console.log([sym]);
+    console.log(student[`Email`]);
+    console.log(student);
+    student.Education();
+    student.City();
+    console.log(Object.keys(student));
+    console.log(Object.values(student));
+    console.log(Object.entries(student));
+    console.log(student.hasOwnProperty('firstname'));
+    console.log(student.hasOwnProperty('Tushar'));
+    Object.freeze(student);
+    student.Email="akash@gmail.com";
+    console.log(student.Email);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let student={
+      firstname:"Tushar",
+      lastName:"Chaudhary"
+    }
+    student.grade="A";
+    console.log(student);
+
+    Object.freeze(student);  // here we freezed the object so no modifications will be done now.
+
+    student['College']="ABES";
+    console.log(student);
+  </script>
+</body>
+</html>

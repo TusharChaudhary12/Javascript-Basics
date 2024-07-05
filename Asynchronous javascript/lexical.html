@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Lexical scope :local memory of Execution context + reference to parent of lexical scope
+    lexical scope parent : where variable and function is physically present.
+
+   closure is a function bundled together with its lexical environment.
+   Clsourerefers to the mechanism by which  inner function retain access to the variables of their even after the outer function has finished executing.
+  </title>
+</head>
+
+<body>
+  <!-- <script>
+    function a(){
+      console.log(val);
+    }
+    var val=10;
+    a();
+
+    // here JS Engine will try to find out the val inside local memory of a() execution context 
+  </script> -->
+
+  <!-- <script>
+    function a() {
+      function b() {
+        console.log(val);
+      }
+      b();
+    }
+    var val = 10;
+    a();
+  </script> -->
+  <!-- 
+  <script>
+    function a() {
+      var val = 10;
+      function b() {
+        console.log(val);
+      }
+      b();
+    }
+    a();
+  </script> -->
+
+  <!-- <script>
+    function a() {
+      var val = 10;
+      function b() {
+    console.log(val);
+      }
+      return b;
+    }
+    a()(); -->
+
+
+    <!-- <script>
+    function a() {
+      var val = 10;
+      function b() {
+      }
+      return b;
+    }
+     console.log(val);
+
+  </script> -->
+
+  <!-- <script>
+    function outer(b){
+      function inner(){
+        console.log(val,b);
+      }
+      let val=10;
+      return inner;
+    }
+    let out=outer("Javascript");
+    out();
+  </script> -->
+
+<script>
+    function outer(){
+    function inner(){
+      console.log(val);
+    }
+    inner();
+  }
+  let val = 10;
+  outer();
+</script>
+  
+
+</body>
+
+</html>

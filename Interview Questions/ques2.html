@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <script>
+      let c={greeting:'Hey'};
+    let d;
+    d=c;
+    c.greeting="Hello";
+    console.log(d.greeting);
+    
+  </script> -->
+
+<!-- 'd' and 'c' reference the same object. Therefore, modifications to c are reflected in 'd' -->
+
+<!-- ---------------------**********************------------------- -->
+
+  <script>
+    let c = { greeting: 'Hey' };
+    let d;
+    d = { ...c };
+    c.greeting = "Hello";
+    console.log(d.greeting);
+  </script>
+
+ <!-- d is assigned a shallow copy of c , modifying c will not affect the d. -->
+
+
+
+
+</body>
+
+</html>

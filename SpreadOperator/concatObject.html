@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The spread operator (...) is used for Spreading Properties of an Object</title>
+</head>
+<body>
+  <script>
+   
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+console.log(returnedTarget);
+console.log(source);
+console.log(target);
+console.log(returnedTarget === target);
+
+// ------------spread operator is used for Concatenation of objects---------------------
+
+const myobj1 = { a: 1, b: 2 };
+const myobj2 = { b: 4, c: 5 };
+
+console.log({...myobj1,...myobj2});
+
+
+// ----------------Spread operator is used to Create the shallow copy---------------
+
+const obj1={name:"Tushar",lastname:"Chaudhary"};
+console.log({...obj1});
+
+
+// ---------------------------**********************-------------------------
+
+
+const object1={name:"Tushar",lastname:"Chaudhary"};
+const object2={...object1,city:"Bijnor"};
+console.log(object2);
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="language">
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+  <script>
+    function language(name){
+      let li=document.createElement('li');
+      let addText=document.createTextNode(name);
+      li.appendChild(addText);
+      let language=document.querySelector('.language');
+      language.appendChild(li);
+     
+    }
+    language("Python");
+    language("C-Language");
+    language("ruby");
+
+
+
+    const secondlan=document.querySelector("li:last-child");
+    secondlan.remove();
+    
+
+   </script>
+</body>
+</html>

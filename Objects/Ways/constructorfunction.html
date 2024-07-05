@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Using Object Constructor
+    use case :This method is useful when you need to add properties and methods to an object dynamically after its initial creation.
+  </title>
+</head>
+<body>
+  <!-- <script>
+    const student=new Object();
+    student.name="Tushar chaudhary",
+    student.age="24",
+    student.func=function(){
+      return(`My name is ${this.name} and I am ${this.age} years old`);
+    }
+    console.log(student.func());
+  </script> -->
+<script>
+  const student=new Object();
+  student.firstname="Tushar";
+  student.lastname="Chaudhary";
+  student.age=24;
+  student.username=function(){
+    return(`My name is ${this.firstname} ${this.lastname} and I am ${this.age} years old`);
+  }
+  console.log(student.username());
+</script>
+
+</body>
+</html>
