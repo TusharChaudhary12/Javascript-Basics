@@ -46,3 +46,7 @@ A Promise represents the eventual completion of an asynchronous operation. It he
 
 - To avoid callback hell (Pyramid of doom) => We use promise chaining. This way our code expands vertically instead of horizontally. Chaining is done using '.then()'
 - A very common mistake that developers do is not returning a value during chaining of promises. Always remember to return a value. This returned value will be used by the next .then()
+
+catch method is used to attach a failback callback function with the promise object.
+The primary purpose of catch is to gracefully handle error.
+
