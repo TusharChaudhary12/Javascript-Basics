@@ -46,7 +46,71 @@ The ability of function to be used as values , can be passed as an arguments to 
 2)function can be passed as an arguments to other functions
 3)function can be returned as values from other functions.
 
-when functions are treated as a value , when function are passed as an arugemnt to another function , when function are returned as value from other function 
+when functions are treated as a value , when function are passed as an arugemnt to another function , when function are returned as value from other function .
+
+
+
+-------------------********************-------------------------
+
+Types of functions in javascript
+
+1) named function
+2) unnamed function
+3) Function statement (Function declarations)
+4) function expressions (function assigment)
+5) IIFE
+6) Arrow functions
+7) factory functions
+8) contsructor function
+9) Pure and impure function
+10) lambda function
+11) map function
+12) Generator functions
+13) Method functions
+
+You've listed various types of functions in JavaScript! Here's a brief description of each one:
+
+1. **Named Function:**
+   - A function declaration that has a name and can be reused throughout the code.
+
+2. **Unnamed Function:**
+   - Also known as anonymous functions, these are functions without a name. They are often used as callbacks or immediately invoked.
+
+3. **Function Statement (Function Declarations):**
+   - A way to declare a function with the `function` keyword. It's hoisted and can be used before it's declared.
+
+4. **Function Expressions (Function Assignment):**
+   - Defining a function as part of an expression, often used when assigning a function to a variable.
+
+5. **IIFE (Immediately Invoked Function Expression):**
+   - A function that is executed immediately after it's created. It's wrapped in parentheses to ensure it's treated as an expression.
+
+6. **Arrow Functions:**
+   - Introduced in ES6, arrow functions provide a concise syntax for writing functions in JavaScript.
+
+7. **Factory Functions:**
+   - Functions that return an object (often used for creating multiple instances of similar objects).
+
+8. **Constructor Function:**
+   - Functions used with the `new` keyword to create objects with properties and methods.
+
+9. **Pure and Impure Functions:**
+   - **Pure Functions:** Functions that always return the same output for the same input, without modifying external state.
+   - **Impure Functions:** Functions that can produce different outputs for the same input or have side effects like modifying external state.
+
+10. **Lambda Function:**
+    - A term sometimes used interchangeably with anonymous functions or arrow functions, especially in contexts where functions are treated as data.
+
+11. **Map Function:**
+    - Refers to the `map()` method available on arrays in JavaScript, used for iterating over an array and transforming its elements.
+
+12. **Generator Functions:**
+    - Functions that can be paused and resumed, yielding multiple values over time using the `yield` keyword.
+
+13. **Method Functions:**
+    - Functions that are properties of objects. When a function is defined as a property of an object, it is called a method of that object.
+
+Each type of function serves different purposes in JavaScript, from basic reusable functions to advanced constructs like generators and methods.
 
 
 

@@ -7,11 +7,16 @@
 </head>
 <body>
   <script>
-    function value(){
-      console.log("Hello");
-    }
-    // value();
+     const p=new Promise((resolve,reject)=>{
+        resolve("Promise is resolved");
+      })
+    async function getData(){
+    const value=await p;
     console.log(value);
+    }
+   getData();
+
+
   </script>
 </body>
 </html>

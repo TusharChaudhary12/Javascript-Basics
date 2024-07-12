@@ -8,7 +8,7 @@ There are two types of Data types
       There are 6 types
 
       a) String           datatype(string)
-      b)  Number          datatype(number)
+      b) Number           datatype(number)
       c) Boolean          datatype(boolean)
       d) Null             datatype(Object)
       e) undefined        datatype(undefined)

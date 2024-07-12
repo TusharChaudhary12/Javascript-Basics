@@ -40,7 +40,7 @@ const user=fetch("url");
 
 Fetch is a web API that performs asynchronous operations, such as fetching data from a server. When we call fetch, it returns a Promise object immediately. Initially, this Promise object is in a pending state, represented by undefined, indicating that it is waiting for the asynchronous operation to complete.
 
-Once the asynchronous operation inside fetch completes, the Promise resolves and updates its state with the resulting data.then method is used to attach a callback function to a promise object.This callback function will execute once the promise is fulfilled,indicating that the async operation it represents has completed successfully and we can proceed to use the fetched data.
+Once the asynchronous operation inside fetch completes, the Promise resolves and updates its state with the resulting data , .then method is used to attach a callback function to a promise object.This callback function will execute once the promise is fulfilled,indicating that the async operation it represents has completed successfully and we can proceed to use the fetched data.
 
 A Promise represents the eventual completion of an asynchronous operation. It helps solve the problem of callback hell by providing a cleaner way to handle asynchronous code, avoiding deeply nested callbacks.
 

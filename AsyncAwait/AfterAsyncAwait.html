@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+     const p=new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+    resolve("promise is resolved");
+   },5000)
+   })
+   async function getData(){
+    // here JS engine will wait for 5 seconds to resolve the promise first then start execute code line by line
+
+    console.log("Execute before await");
+    const value=await p;
+    console.log("Namaste");
+    console.log(value);
+    console.log("Javascript");
+   }
+   getData();
+</script> -->
+
+<!-- ---------------------****************-------------------- -->
+
+<!-- <script>
+  const p=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+ resolve("promise is resolved");
+},5000)
+})
+async function getData(){
+ // here JS engine will wait for 5 seconds to resolve the promise first then start execute code line by line
+
+ console.log("Execute before await");
+ const value1=await p;
+ console.log("Namaste1");
+ console.log(value1);
+ console.log("Javascript1");
+
+ console.log("Execute after await");
+ const value2=await p;
+ console.log("Namaste2");
+ console.log(value2);
+ console.log("Javascript2");
+}
+getData();
+</script> -->
+
+<!-- --------------  same time in both promises------------------- -->
+
+<!-- <script>
+  const p1=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+ resolve("promise is resolved");
+},5000)
+})
+const p2=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+ resolve("promise is resolved");
+},5000)
+})
+async function getData(){
+ // here JS engine will wait for 5 seconds to resolve the promise first then start execute code line by line
+
+ console.log("Execute before await");
+ const value1=await p1;
+ console.log("Namaste1");
+ console.log(value1);
+ console.log("Javascript1");
+
+ console.log("Execute after await");
+ const value2=await p2;
+ console.log("Namaste2");
+ console.log(value2);
+ console.log("Javascript2");
+}
+getData();
+</script> -->
+
+
+<!-- -------------------different time in both promises
+     p1=higher
+     p2=lesser------------------- -->
+
+<!-- <script>
+  const p1=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+ resolve("promise is resolved");
+},10000)
+})
+const p2=new Promise((resolve,reject)=>{
+setTimeout(()=>{
+ resolve("promise is resolved");
+},5000)
+})
+async function getData(){
+ // here JS engine will wait for 5 seconds to resolve the promise first then start execute code line by line
+
+ console.log("Execute before await");
+ const value1=await p1;
+ console.log("Namaste1");
+ console.log(value1);
+ console.log("Javascript1");
+
+ console.log("Execute after await");
+ const value2=await p2;
+ console.log("Namaste2");
+ console.log(value2);
+ console.log("Javascript2");
+}
+getData();
+</script> -->
+
+<!-- -------------------different time in both promises
+     p1=lesser
+     p2=higher------------------- -->
+
+     <script>
+      const p1=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+     resolve("promise is resolved");
+    },5000)
+    })
+    const p2=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+     resolve("promise is resolved");
+    },10000)
+    })
+    async function getData(){
+     // here JS engine will wait for 5 seconds to resolve the promise first then start execute code line by line
+    
+     console.log("Execute before await");
+     const value1=await p1;
+     console.log("Namaste1");
+     console.log(value1);
+     console.log("Javascript1");
+    
+     console.log("Execute after await");
+     const value2=await p2;
+     console.log("Namaste2");
+     console.log(value2);
+     console.log("Javascript2");
+    }
+    getData();
+    </script>
+
+</body>
+</html>
+
+
+<!-- output
+Execution before await
+Namaste1
+promise is resolved
+Javascript1
+Execute after await
+Namaste1
+promise is resolved
+Javascript1 -->
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    How to convert a string to a number
+  </title>
+</head>
+<body>
+  <script>
+    let x='12';
+    console.log(Number(x),typeof Number(x));
+    console.log(parseInt(x),typeof parseInt(x));
+    console.log(+x,typeof(+x));
+
+    x='abc';
+    console.log(Number(x),typeof Number(x));
+    console.log(parseInt(x),typeof parseInt(x));
+    console.log(+x,typeof(+x));
+
+    x="abc123";
+    console.log(Number(x),typeof Number(x));
+    console.log(parseInt(x),typeof parseInt(x));
+    console.log(+x,typeof(+x));
+
+    console.log(typeof NaN);
+    console.log(NaN==NaN); 
+    console.log(NaN===NaN);
+
+
+  </script>
+</body>
+</html>

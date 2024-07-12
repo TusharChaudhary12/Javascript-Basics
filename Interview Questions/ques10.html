@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <h1 id="heading">Hello World</h1>
+  <script>
+    const arr = ["Tushar", "Akash", "Sachin", "Arjun"];
+    const heading = document.querySelector('#heading');
+    let check = 0;
+    heading.addEventListener('click', () => {
+      console.log(check);
+       heading.textContent=arr[check];
+       check = (check + 1) % arr.length;
+}) -->
+
+<h1 id="heading">Hello World</h1>
+<script>
+  const arr = ["Tushar", "Akash", "Sachin", "Arjun"];
+  const heading = document.querySelector('#heading');
+  let check = 0;
+
+  // Define the anonymous function for the event listener
+  const clickHandler = () => {
+    console.log(check);
+    heading.textContent = arr[check];
+    check++;
+    if (check == arr.length) {
+      heading.removeEventListener('click', clickHandler); // Remove the listener using the named function
+    }
+  };
+
+  // Add the event listener using the anonymous function
+  heading.addEventListener('click', clickHandler);
+</script>
+
+
+</body>
+
+</html>

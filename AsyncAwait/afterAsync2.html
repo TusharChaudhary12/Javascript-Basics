@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const p=new Promise((resolve,reject)=>{
+        resolve("Promise is resolved");
+      })
+      async function getData(){
+      return "hello";
+      }
+     getData().then((data)=>console.log(p,data));
+    </script>
+  </body>
+  </html>
